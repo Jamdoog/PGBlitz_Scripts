@@ -3,7 +3,7 @@ Stores any PGBlitz scripts I make. Usually only basic scripts but useful.
 
 ## Feeder Scripts:
 
-# backup.sh
+# feeder/backup.sh
 
 This script will backup all of the backups in the respective backup directories of Sonarr/Radarr using the PGBlitz installation. I've found that Radarr and Sonarr backup, so moving it to your GDrive account can be a great way to ensure that you don't loose anything if you have data loss.
 The script needs a little bit of configuring, there are 2 variables which are down to your descretion.
