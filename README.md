@@ -17,3 +17,8 @@ Once more, as the name suggests it is a boolean which can be chnaged to configur
 We can also use this with a cronjob, meaning that we can get it to automatically backup when we desire. Edit appropriately for different timing if you want. In this example, it will take place automatically every 7 days.
 
 crontab -l > mycron && echo "0 0 */7 * * /home/server/backup.sh" >> mycron && crontab mycron && rm mycron
+
+# feeder/anime.sh
+
+This scrpit will download any webm provided and then move it to the directory of your choice. Similar to my backup script, it will use GDrive so the respective directory you can configure needs to be without the /mnt/unionfs. By default, it's setup to aoped (For Anime Op Ed), although this script can be adopted to any webm automation.
+This script works by having the first parameter when running it be the link to the webm, and then the second parameter being the name that you want to call it. For example: anime.sh http://path.to/file.webm "JoJo Opening 1" (When naming it you don't need to include the .webm). I don't really expect this script to be used by anyone by myself, but it is here for anyone who would like to use it/adapt it??
