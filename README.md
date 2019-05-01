@@ -16,4 +16,4 @@ Once more, as the name suggests it is a boolean which can be chnaged to configur
 
 We can also use this with a cronjob, meaning that we can get it to automatically backup when we desire. Edit appropriately for different timing if you want. In this example, it will take place automatically every 7 days.
 
-crontab -l > mycron && echo "0 0 */7 * * /home/backup.sh" >> mycron && crontab mycron && rm mycron
+crontab -l > mycron && echo "0 0 */7 * * /home/server/backup.sh" >> mycron && crontab mycron && rm mycron
